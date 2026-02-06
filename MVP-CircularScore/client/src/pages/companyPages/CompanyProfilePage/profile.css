@@ -1,0 +1,282 @@
+@media (max-width: 450px) {
+  .profileContainer {
+    padding-inline: 1rem;
+    padding-block: 2rem;
+  }
+
+  .data {
+   display: flex;
+   flex-direction: column;
+  }
+
+  .ranking {
+    margin-inline: auto;
+  }
+
+  .test-info {
+    width: 100%;
+  }
+
+  .image-title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+  }
+
+
+  .testscont {
+    padding-block: 1.2rem;
+    padding-inline: 0.7rem;
+    gap: 1.2rem;
+  }
+  
+  .oneTest {
+    padding: 1rem;
+    
+    img {
+      max-width: 3.5rem;
+    }
+    
+    h3 {
+      padding-inline: 0.5rem;
+      font-size: clamp(1.2rem, 4vw, 1.6rem);
+    }
+    
+    
+    .btn-details {
+      max-width: 6rem;
+      max-height: 2rem;
+      font-size: 0.9rem;
+    }
+    
+    .test-info {
+      display: flex;
+      flex-direction: column;      
+    }
+    
+  }
+  
+  .progressContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-block: 1rem;
+    gap: 0.8rem;
+  }
+  
+  .progressBarContainer {
+    max-width: 7rem;
+  }
+
+  .btn-details {
+    padding-inline: 0.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+}
+
+@media (min-width: 1100px){
+ .profileContainer  {
+    padding: 3rem;
+  }
+
+  .testscont {
+    gap: 2rem;
+  }
+
+  .ranking {
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .testscont {
+    padding: 2rem;
+  }
+
+  .oneTest {
+    padding: 2rem;
+  }
+
+  .test-info {
+    display: flex;
+    justify-content: space-between;
+  
+  }
+
+  .test-info h3{
+      
+    font-size: clamp(1.5rem, 2vw, 1.8rem);
+    max-width: 35rem;
+  }
+
+  .image-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+  }
+
+  .progressContainer{
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+}
+
+
+.profileContainer {
+  
+
+  .profile {
+    background-color: #FFFFFF;
+    border: 1px solid rgb(221, 224, 230);
+    border-radius: 1rem;
+    padding: 3rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    .position {
+      background-color: rgb(25, 43, 72);
+      color: white;
+      font-size: larger;
+      padding: 0.5rem;
+      text-align: center;
+      border-radius: 20rem;
+    }
+  }
+}
+
+  .testscont {
+    background-color: white;
+    border: 1px solid rgb(221, 224, 230);
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: flex;
+    flex-direction: column
+    ;
+
+    img {
+      width: 5rem;
+    }
+
+    .img{
+      width: 2.1rem;
+       margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+
+    .progressBarContainer {
+      display: flex;
+      width: 150px;
+      height: 20px;
+      border-radius: 2rem;
+      background-color: #E5E7EA;
+      
+
+      .progressBarHigh {
+        height: 20px;
+        border-radius: 2rem;
+        margin: 0;
+        padding: 0;
+        background-color: #4caf50;
+      }
+
+      .progressBarMed {
+        height: 20px;
+        border-radius: 2rem;
+        margin: 0;
+        padding: 0;
+        background-color: #ff9800;
+      }
+
+      .progressBarLow {
+        height: 20px;
+        border-radius: 2rem;
+        margin: 0;
+        padding: 0;
+        background-color: #f44336;
+      }
+    }
+
+    .btn-details{
+      display: flex;
+      padding-inline: 1rem;
+      border-radius: 20px;
+      background-color: #f0f0f0;
+      border: 1px solid #EDF2F7;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      p{
+        margin-block-start: .8rem;
+      }
+    }
+
+    .btn-details:hover{
+      background-color: #bab9b9;
+    }
+    .oneTest{
+      background-color: #FFFFFF;
+      border: 1px solid #EDF2F7;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap:3rem;
+      border-radius: 20px; 
+
+
+      .test-details{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .name p {
+      margin: 0;
+    }
+
+    .button {
+      height: 3rem;
+    }
+
+    .resultBar{
+      width: 100%;
+      margin-block-start: 1rem;
+    }
+
+    .progressCont{
+      width: 100%;
+      height: 1rem;
+      background-color: #e0e0e0;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .progressFill{
+      height: 100%;
+      background-color: #4caf50;
+      transition: width 0.5s ease;
+    }
+
+    .progressFill.low{
+      background-color: #f44336;
+    }
+    .progressFill.medium{
+      background-color: #ff9800;
+    }
+    .progressFill.high{
+      background-color: #4caf50;
+    }
+
+  }

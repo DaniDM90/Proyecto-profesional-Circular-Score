@@ -1,0 +1,48 @@
+:root {
+ --margin-padding: 1rem;
+ --gap-border: 0.5rem;
+}
+
+@media (max-width: 450px) {
+    .title {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.oneTest {
+  padding: 1.5rem;
+
+
+  .newTest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    img {
+      width: 220px;
+    }
+
+    .btnOneTest {
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-border);
+    }
+
+  }
+
+
+  .historicTestContainer {
+    margin-left: var(--margin-padding);
+    margin-right: var(--margin-padding);
+    padding: var(--margin-padding);
+    border: 1px solid rgb(231, 235, 242);
+    border-radius: var(--gap-border);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+}

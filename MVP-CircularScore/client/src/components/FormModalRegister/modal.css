@@ -1,0 +1,11 @@
+.modal-content {
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+@media (width < 500px) {
+  .modal-content {
+    padding: .5rem;
+  }
+}

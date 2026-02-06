@@ -1,0 +1,58 @@
+/* ESTILOS DE BOTÓN */
+.btn-green {
+  background-color: rgb(0, 212, 126) !important;
+  border: none !important;
+
+  &:hover {
+    background-color: rgb(193, 242, 222) !important;
+    color: rgb(0, 212, 126) !important;
+  }
+}
+
+.btn-white {
+  background-color: rgb(255, 255, 255) !important;
+  border: 1px solid rgb(193, 193, 193) !important;
+  color: black !important;
+
+  &:hover {
+    background-color: rgb(188, 188, 188) !important;
+  }
+}
+
+.btn-blue {
+  background-color: rgb(68, 126, 247) !important;
+
+  &:hover {
+    background-color: rgb(38, 75, 151) !important;
+  }
+}
+
+.btn-red {
+  background-color: rgb(220, 53, 69) !important;
+  border: none !important;
+
+  &:hover {
+    background-color: rgb(143, 36, 46) !important;
+  }
+}
+
+.btn-blue-circle {
+  background-color: rgb(68, 126, 247) !important;
+
+  border: none !important;
+  border-radius: 50% !important;
+
+  &:hover {
+    background-color: rgb(38, 75, 151) !important;
+  }
+}
+
+.navbarbutton {
+  max-height: 2.5rem;
+  background-color: rgb(28, 37, 52) !important;
+  border: 1px solid white !important;
+
+  &:hover {
+    background-color: rgb(23, 72, 170) !important;
+  }
+}

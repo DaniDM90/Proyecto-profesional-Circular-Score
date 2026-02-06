@@ -1,0 +1,41 @@
+import './NavbarPublic.css';
+import { MyButton } from '../../MyButton/MyButton';
+
+
+export const NavbarPublic = ({setShowPage, showPage}) => {
+  
+
+  return (
+    <div className='header-public'>
+      <div>
+        <img id='inicio' src="/src/assets/Images/logo/logo.png" />
+      </div>
+      <div className='buttons-cont'>
+        {/* Redirigen de una sección a otra del home */}
+        <MyButton
+          text='Características'
+          onSubmit={() => document.getElementById('caracteristicas').scrollIntoView({ behavior: 'smooth' })}
+          btnClass='btn-white'
+        />
+        <MyButton
+          text='Contacto'
+          onSubmit={() => document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })}
+          btnClass='btn-white'
+        />
+        {showPage === "register" ? 
+          <MyButton
+            text='Iniciar sesión'
+            onSubmit={() =>setShowPage('login')} 
+            btnClass='btn-green'
+          />
+          :
+          <MyButton
+            text='Registrarse'
+            onSubmit={() =>setShowPage('register')} 
+            btnClass='btn-green'
+          />
+        }
+      </div>
+    </div>
+  )
+}

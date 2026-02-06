@@ -1,0 +1,80 @@
+:root {
+  --border: 1px solid rgb(231, 235, 242);
+  --background-color: #fff;
+  --border-radius: 0.5rem;
+  --padding-block: 1.5rem;
+  --padding-block-name: 2rem;
+  --font-size-name: 3rem;
+  --name-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  --padding-oneCompany: 3rem;
+  --padding-inline-name: 6rem;
+  --button-max-width: 20rem;
+  --button-min-width: 9rem;
+  --media-padding: 1rem;
+}
+
+@media (max-width: 450px) {
+  .company_name_div {
+    display: flex;
+    gap: 1rem;
+    align-content: center;
+  }
+
+  .button {
+    min-width: var(--button-min-width);
+  }
+}
+
+
+@media (max-width: 1100px) {
+  .company_name_div {
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+
+
+  .button {
+    max-width: var(--button-max-width);
+    margin: auto;
+    padding-block: var(--media-padding);
+  }
+}
+
+
+.one_Company {
+  padding: var(--padding-oneCompany);
+}
+
+
+.company_name_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: var(--padding-block-name);
+  padding-inline: var(--padding-inline-name);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  box-shadow: var(--name-box-shadow);
+  background-color: var(--background-color);
+}
+
+.company_name {
+  font-size: var(--font-size-name);
+}
+
+.person_info {
+  padding: var(--padding-block);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  background-color: var(--background-color);
+}
+
+.company_info {
+  padding: var(--padding-block);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  background-color: var(--background-color);
+}
+

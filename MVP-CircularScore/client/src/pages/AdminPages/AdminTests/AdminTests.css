@@ -1,0 +1,35 @@
+.AdmintestsContainer {
+  padding: 3rem;
+}
+
+.AdmintestsContainer>div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (width < 1400px) {
+  .AdmintestsContainer>div {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .AdmintestsContainer>div {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* width: 100%; */
+    /* max-width: 10rem; */
+    /* padding-inline: 3rem; */
+
+  }  
+}
+
+@media (width < 1100px) {
+  .AdmintestsContainer>div {
+    grid-template-columns: 1fr;
+  }
+}
